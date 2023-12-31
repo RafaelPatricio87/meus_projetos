@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Big Shoulders Display', sans-serif;
+  /* font-family: 'Lexend Deca', sans-serif; */
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  height: 100vh;
+}
+.container {
+  background-color: bisque;
+  display: flex;
+  width: 100%;
+  max-width: 930px;
+}
+img{
+  display: block;
+  width: 50px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.box {
+  padding: 48px;
+}
+.box h1{
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 95%);
+}
+.box p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  margin-bottom: 80px;
+}
+button{
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+  color:hsl(0, 0%, 95%); 
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxu {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.sedan button:hover{
+  background-color: #fff;
+  color: hsl(31, 77%, 52%);
+  
+}
+.suv button:hover{
+  background-color: #fff;
+  color: hsl(184, 100%, 22%);
+}
+.luxu button:hover{
+  background-color: #fff;
+  color: hsl(179, 100%, 13%);
+}
+@media(max-width: 910px){
+  .container{
+    flex-direction: column;
+     max-width: 330px;
+
+  }
+  .sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+  }
+  .luxu {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0px;
+  }
+}
